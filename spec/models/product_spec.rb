@@ -1,5 +1,11 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
 RSpec.describe Product, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'creates Product' do
+    product = Product.new
+    product.info = { name: 'Dyson' }
+    product.save
+
+    expect(product).to be_persisted
+  end
 end

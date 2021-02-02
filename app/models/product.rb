@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Product < ApplicationRecord
-  auditable
+  audited# except: :info
 
-  serialize :info
+  attribute :info, Info.to_type
 end
