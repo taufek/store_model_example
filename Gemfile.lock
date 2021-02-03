@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:DmitryTsepelev/store_model.git
+  revision: cab2aad2a68ab0c285b744b1c52ac497d106ebe6
+  branch: model_to_yaml
+  specs:
+    store_model (0.8.1)
+      activerecord (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -184,8 +192,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    store_model (0.8.1)
-      activerecord (>= 5.2)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -226,7 +232,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (>= 6)
   spring
-  store_model
+  store_model!
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
