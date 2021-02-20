@@ -3,5 +3,5 @@
 class Product < ApplicationRecord
   audited
 
-  attribute :info, Info.to_type
+  attribute :info, InfoType.new
 end

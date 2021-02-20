@@ -1,14 +1,8 @@
 # frozen_string_literal: true
 
 class Info
-  include StoreModel::Model
+  include ActiveModel::Model
+  include ActiveModel::Attributes
 
   attribute :name, :string
-
-  def init_with(*)
-    self
-  end
-
-  def encode_with(*)
-  end
 end
